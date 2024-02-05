@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #FBA1B7;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Added to make the content center vertically */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            background-color: #FFD1DA;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #mainGif {
+            margin-top: 20px;
+            width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day My Loveee!!</h1>
+    <button onclick="redirectToLetter()">Click me to see my letter for you!</button>
+    <img id="mainGif" src="730d75ed729397068c7a89fa7476e305.gif" alt="Main GIF">
+
+    <script>
+        function redirectToLetter() {
+            window.location.href = "letter.html";
+        }
+    </script>
+</body>
+</html>
