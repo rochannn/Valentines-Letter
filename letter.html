@@ -4,99 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #FBA1B7;
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-            margin: 0;
-        }
-        #letter {
-            margin-top: 20px;
-            background-color: #FFD1DA;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        #letterGif {
-            margin-top: 20px;
-            width: 300px;
-            height: auto;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        #yesButton {
-            background-color: #4CAF50; /* Green */
-            color: white;
-        }
-        #noButton {
-            background-color: #f44336; /* Red */
-            color: white;
-        }
-        #doneText {
-            margin-top: 20px;
-        }
-        #questionText {
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>For My Most Gorgeous Baby Jazzmin!</h1>
+    <h1>For My Gorgeous Baby Jazzmin!😽🌹</h1>
     <img id="letterGif" src="cat-cat-love.gif" alt="Letter GIF">
-    <div id="letter">
-        <b>
-            <p>Hi love, Happy Valentine's Day! I loveee youuuu so much. Sana hindi tayo mapagod kahit gaano pa kalala mga away natin dahil 
-            sa mga kakulitan ko at dahil lagi kita natutulugan kahit ilang beses mo na ako pinagsasabihan. Pasensya na lovey, letter lang muna 
-            ang maibibigay ko sayo ngayon. Dito ko pa ginawa yung letter ko, 'di kasi ako marunong gumawa sa papel e at siyempre pinaghirapan ko 
-            din tong webpage na ginawa ko para sayo hehe. Kain na lang tayo sa labas kasi wala pa akong pang-regalo sayo at wala pa akong naiipon 
-            dahil madaming gastusin. Hayaan mo lovey, babawi ako sayo sa birthday mo at bibigyan kita ng regalo. Mahal na mahal kita palagi, 
-            babyyyy kooo. Ikaw lang gusto kong makasama habang buhay at hinding-hindi ako magsasawang mahalin ka araw-araw. Mag-ingat ka palagi honeyy!!!</p>
-            <p>mwa mwa mwaaaa!!</p>
-        </b>
-    </div>
-    <div id="buttons">
-        <b><p id="doneText">Answer this if you're done reading my letter mwaaaa!</p></b>
-        <b><p id="questionText">DO YOU LOVE ME???</p></b>
-        <button id="yesButton" onclick="expandYes()">Yes</button>
-        <button id="noButton" onclick="moveNo()">No</button>
+    <div id="letterContainer">
+        <div id="letter">
+            <b>
+                <p>Hi loveee, Happy Valentine's Day! I loveee youuu sooo muchhh. Sana hindi tayo mapagod kahit gaano pa kalala ang mga away natin dahil sa mga kakulitan ko at dahil lagi kita natutulugan kahit ilang beses mo na akong pinagsasabihan. Pasensya na lovey, letter lang muna mabibigay ko sayo now. Dito ko pa ginawa yung letter ko, 'di kasi ako marunong gumawa ng letter sa papel with designs e, at siyempre pinaghirapan ko din 'tong webpage na ginawa ko para sayo hehe mwaaa. Kain na lang tayo sa labas kasi wala pa akong pang-regalo sayo at wala pa akong naiipon dahil madaming gastusin. Hayaan mo lovey, babawi ako sayo sa birthday mo at bibigyan kita ng regalo. Mahal na mahal kita palagi, babyyyy kooo. Promise ko na I will always do my best loving you! Ikaw lang gusto kong makasama habang buhay at hinding-hindi ako magsasawang mahalin ka araw-araw. Mag-ingat ka palagi honeyy!!!</p>
+                <p>mwa mwa mwaaaa!!</p>
+            </b>
+        </div>
+        <div id="buttons">
+            <b><p id="doneText">Answer this if you're done reading my letter mwaaaa!</p></b>
+            <b><p id="questionText">DO YOU LOVE ME???</p></b>
+            <button id="yesButton" onclick="expandYes()">Yes</button>
+            <button id="noButton" onclick="moveNo()">No</button>
+        </div>
     </div>
 
-    <script>
-        var noClicks = 0;
-
-        function moveNo() {
-            var noButton = document.getElementById("noButton");
-            noClicks++;
-            if (noClicks >= 5) {
-                noButton.style.display = "none";
-            } else {
-                var xPos = Math.random() * (window.innerWidth - noButton.offsetWidth);
-                var yPos = Math.random() * (window.innerHeight - noButton.offsetHeight);
-                noButton.style.position = "absolute";
-                noButton.style.left = xPos + "px";
-                noButton.style.top = yPos + "px";
-            }
-        }
-
-        function expandYes() {
-            var yesButton = document.getElementById("yesButton");
-            var noButton = document.getElementById("noButton");
-            yesButton.textContent = "I LOVEEEEE YOUUUUU SOO MUCHHHH MOREEEEEE";
-            yesButton.style.backgroundColor = "#FFD1DA	";
-            yesButton.style.color = "black";
-            yesButton.style.fontWeight = "bold";
-            yesButton.style.fontSize = "20px"; 
-            noButton.style.display = "none";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
