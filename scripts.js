@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! :3";
+  titleElement.innerHTML = "I LOVEEEE YOUUU MOREEEE HONEYYY!";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -55,7 +55,11 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.jpg`;
+  if (image === "yes") {
+    catImg.src = "img/cat-yes.jpg";
+  } else {
+    catImg.src = `img/cat-${image}.jpg`;
+  }
 }
 
 function updateNoButtonText() {
