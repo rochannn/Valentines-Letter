@@ -56,9 +56,9 @@ function generateMessage(noCount) {
 
 function changeImage(image) {
   if (image === "yes") {
-    catImg.src = "img/cat-yes.jpg";
+    catImg.src = "cat-yes.jpg";
   } else {
-    catImg.src = `img/cat-${image}.jpg`;
+    catImg.src = `cat-${image}.jpg`;
   }
 }
 
